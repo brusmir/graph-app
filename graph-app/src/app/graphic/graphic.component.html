@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="col-md-6">
+		<gf-pagination [totalItems]="numberOfCards" [pageSize]="params.pageSize" [activePage]="params.page" (onPageChange)="updateParams($event)"></gf-pagination>
+	</div>
+	<div class="col-md-6">
+		<gf-page-size [activePage]="params.page" [pageSize]="params.pageSize" (onPageSizeChange)="updateParams($event)"></gf-page-size>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-8">
+		<gf-graphic-list [cards]="cards"></gf-graphic-list>
+	</div>
+	<div class="col-md-4">
+		<gf-comment></gf-comment>
+	</div>
+</div>

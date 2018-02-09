@@ -1,0 +1,1 @@
+<button class="btn btn-secondary" *ngFor="let page of pages" [ngClass]="{'active': activePage == pageSize}" (click)="pageSizeChange(page)">{{page}}</button>
